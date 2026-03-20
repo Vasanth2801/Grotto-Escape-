@@ -1310,6 +1310,7 @@ GameObject:
   - component: {fileID: 1881996849}
   - component: {fileID: 1881996850}
   - component: {fileID: 1881996851}
+  - component: {fileID: 1881996852}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1448,6 +1449,21 @@ MonoBehaviour:
   pooler: {fileID: 459786963}
   firePoint: {fileID: 938366797}
   animator: {fileID: 1315987010}
+--- !u!114 &1881996852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881996846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f07d238a55e1514bb8338082824b3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!1 &1890358857
 GameObject:
   m_ObjectHideFlags: 0

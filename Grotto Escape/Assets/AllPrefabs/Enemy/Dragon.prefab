@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6864978107673437212}
   - component: {fileID: 5524742490526497081}
   - component: {fileID: 7102002963409498072}
+  - component: {fileID: 3270529779259507398}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Untagged
@@ -122,6 +123,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 1
   rb: {fileID: 5524742490526497081}
+--- !u!114 &3270529779259507398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41950358211676068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9399de7895b6cce4d85a66ec1c50fb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 50
+  currentHealth: 0
 --- !u!1 &2437157972895296561
 GameObject:
   m_ObjectHideFlags: 0
