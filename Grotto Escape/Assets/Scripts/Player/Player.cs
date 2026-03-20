@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
         }
 
         HandleAnimations();
+
+        VolcanoDie();
     }
 
     void FixedUpdate()
@@ -58,6 +60,15 @@ public class Player : MonoBehaviour
     {
         facingDirection *= -1;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+    }
+
+    void VolcanoDie()
+    {
+        if(rb.IsTouchingLayers(LayerMask.GetMask("Fire")))
+        {
+            Destroy(gameObject);
+            Time.timeScale = 0f;
+        }
     }
 
     void HandleAnimations()
